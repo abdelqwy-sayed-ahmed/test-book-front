@@ -5,7 +5,8 @@ import http from '../../services/http';
 export default function ResetPassword(){
   const [message,setMessage]=useState('')
   const [serverError,setServerError]=useState('')
-  const hostUrl=process.env.REACT_APP_HOST_URL
+  const hostUrl='https://book-shop-2021.herokuapp.com'
+
 
   const{token}=useParams()
   useEffect(()=>{
