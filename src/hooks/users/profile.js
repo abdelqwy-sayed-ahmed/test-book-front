@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 
 export default function Profile(){
   const [list,setList]=useState('')
-  const hostUrl=process.env.REACT_APP_HOST_URL
+  const hostUrl='https://book-shop-2021.herokuapp.com'
+
   useEffect(()=>{
     async function getProfileData(){
       const userId=localStorage.getItem('uId');

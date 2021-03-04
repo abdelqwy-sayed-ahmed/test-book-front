@@ -14,7 +14,8 @@ export default function Forget(){
   const {register,handleSubmit,errors}=useForm({resolver:yupResolver(schema)})
   const [success,setSuccess]=useState('');
   const [errmessage,setErrMessage]=useState('');
-  const hostUrl=process.env.REACT_APP_HOST_URL
+  const hostUrl='https://book-shop-2021.herokuapp.com'
+
    
 
   const onSubmit=async(data)=>{

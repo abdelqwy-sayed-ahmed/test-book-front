@@ -9,7 +9,8 @@ export default function Register(){
   const [errors,setErrors]=useState({});
   const [success,setSuccess]=useState('');
   const [errmessage,setErrMessage]=useState('');
-  const hostUrl=process.env.REACT_APP_HOST_URL
+  const hostUrl='https://book-shop-2021.herokuapp.com'
+
    
   let schema={
     name:Joi.string().required().label('Name'),

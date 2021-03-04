@@ -15,7 +15,8 @@ export default function AssignPassword() {
   const {register,handleSubmit,errors}=useForm({resolver:yupResolver(schema)});
   const [errserver,setErrServer]=useState('')
   const [success,setSuccess]=useState('')
-  const hostUrl=process.env.REACT_APP_HOST_URL
+  const hostUrl='https://book-shop-2021.herokuapp.com'
+
 
   //handleSubmit
   const onSubmit=async(data)=>{

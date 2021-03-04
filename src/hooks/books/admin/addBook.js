@@ -11,7 +11,7 @@ export default function AddBook(){
   const [image,setImage]=useState('')
   const [serverMessage,setServerMessage]=useState('')
   const [errors,setErrors]=useState({});
-  const hostUrl=process.env.REACT_APP_HOST_URL
+  const hostUrl='https://book-shop-2021.herokuapp.com'
   
   let schema={
     title:Joi.string().required().label('Title'),

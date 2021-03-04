@@ -4,7 +4,7 @@ import http from '../../../services/http';
 import userContext from '../../../context/userContext';
 export default function ViewBook() {
   const [book,setBook]=useState([])
-  const hostUrl=process.env.REACT_APP_HOST_URL
+  const hostUrl='https://book-shop-2021.herokuapp.com'
   let cart=useContext(userContext)
   let addToCart=cart.addToCart
   const {bookId}=useParams()

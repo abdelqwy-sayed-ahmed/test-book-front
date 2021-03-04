@@ -13,7 +13,7 @@ const AdminBookLists = () => {
   const currentPage=lists.currentPage
   const filtering=lists.filtering
   const booksPerPage=Paginate(filtering,currentPage,pageSize)
-  const hostUrl=process.env.REACT_APP_HOST_URL
+  const hostUrl='https://book-shop-2021.herokuapp.com'
 
   const handledeleteBook=async(book)=>{
     if(window.confirm('Are you sure to delete this book ?')){

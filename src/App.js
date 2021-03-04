@@ -37,7 +37,7 @@ export default function App(){
   const [selectedGenre,setSelectedGenre]=useState(null)
   const [cart,setCart]=useState(cartFromLocalStorage)
   const pageSize=6
-  const hostUrl=process.env.REACT_APP_HOST_URL
+  const hostUrl='https://book-shop-2021.herokuapp.com'
   const [loading,setLoading]=useState(true)
 
   //filteringby genre and search
@@ -62,7 +62,7 @@ export default function App(){
       getGenres();
       //getBooks
       const getBooks=async()=>{
-        const {data:res}=await http.get('https://book-shop-2021.herokuapp.com/books')
+        const {data:res}=await http.get(hostUrl+'/books')
         setBooks(res)
         setLoading(false)
       }
