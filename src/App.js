@@ -56,13 +56,13 @@ export default function App(){
         //get genres
       const getGenres=async()=>{
         // setLoading(false)
-        const {data:res}=await http.get(hostUrl+'/genres')
+        const {data:res}=await http.get('https://book-store-cli.herokuapp.com/genres')
         setGenres([{ _id: "", title: "All Books" },...res])
       }
       getGenres();
       //getBooks
       const getBooks=async()=>{
-        const {data:res}=await http.get(hostUrl+'/books')
+        const {data:res}=await http.get('https://book-store-cli.herokuapp.com/books')
         setBooks(res)
         setLoading(false)
       }
