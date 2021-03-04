@@ -56,7 +56,7 @@ export default function App(){
         //get genres
       const getGenres=async()=>{
         // setLoading(false)
-        const {data:res}=await http.get('https://book-shop-2021.herokuapp.com/genres')
+        const {data:res}=await http.get(hostUrl+'/genres')
         setGenres([{ _id: "", title: "All Books" },...res])
       }
       getGenres();
