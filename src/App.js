@@ -37,7 +37,8 @@ export default function App(){
   const [selectedGenre,setSelectedGenre]=useState(null)
   const [cart,setCart]=useState(cartFromLocalStorage)
   const pageSize=6
-  const hostUrl='https://book-shop-2021.herokuapp.com'
+  // const hostUrl='https://book-shop-2021.herokuapp.com'
+  const hostUrl=process.env.REACT_APP_HOST_URL
   const [loading,setLoading]=useState(true)
 
   //filteringby genre and search
