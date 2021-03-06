@@ -15,7 +15,7 @@ export default function CheckEmail() {
   const[success,setSuccess]=useState(false)
   const {register,handleSubmit,errors}=useForm({resolver:yupResolver(schema)});
   const [errserver,setErrServer]=useState('')
-  const hostUrl='https://book-shop-2021.herokuapp.com'
+  const hostUrl=process.env.REACT_APP_HOST_URL
 
   //handleSubmit
   const onSubmit=async(data)=>{

@@ -7,7 +7,7 @@ export default function EditProfileImage(){
   const [success,setSuccess]=useState('')
   const [disable,setDisable]=useState(true)
   const {handleSubmit}=useForm()
-  const hostUrl='https://book-shop-2021.herokuapp.com'
+  const hostUrl=process.env.REACT_APP_HOST_URL
   const onSubmit=async()=>{
     
     const formData=new FormData()

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export default function Profile(){
   const [list,setList]=useState('')
-  const hostUrl='https://book-shop-2021.herokuapp.com'
+  const hostUrl=process.env.REACT_APP_HOST_URL
 
   useEffect(()=>{
     async function getProfileData(){

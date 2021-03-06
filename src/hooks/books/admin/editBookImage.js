@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 const EditBookImage = () => {
   const [image,setImage]=useState('')
   const [success,setSuccess]=useState('')
-  const hostUrl='https://book-shop-2021.herokuapp.com'
+  const hostUrl=process.env.REACT_APP_HOST_URL
   const {_id}=useParams()
   const handleImageChange=e=>{
     setImage(e.target.files[0])

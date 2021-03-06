@@ -12,7 +12,7 @@ const EditBookData = () => {
   const [errors,setErrors]=useState({});
   const genres=results.genres;
   const [serverMessage,setServerMessage]=useState('')
-  const hostUrl='https://book-shop-2021.herokuapp.com'
+  const hostUrl=process.env.REACT_APP_HOST_URL
   
   const {_id}=useParams()
  

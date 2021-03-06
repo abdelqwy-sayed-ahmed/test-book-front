@@ -11,7 +11,7 @@ export default function ShoppingCart(){
   const handleIncrement=list.handleIncrement
   const handleDecrement=list.handleDecrement
   const clearAllCartItems=list.clearAllCartItems
-  const hostUrl='https://book-shop-2021.herokuapp.com'
+  const hostUrl=process.env.REACT_APP_HOST_URL
 
   return(
     <React.Fragment>

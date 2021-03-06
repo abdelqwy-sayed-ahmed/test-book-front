@@ -7,7 +7,7 @@ import jwtDecode from 'jwt-decode';
 
 const Facebook = () => {
   const location=useLocation()
-  const hostUrl='https://book-shop-2021.herokuapp.com'
+  const hostUrl=process.env.REACT_APP_HOST_URL
 
   //facebook login
   const responseFacebook =async data=>{

@@ -9,7 +9,7 @@ export default function Register(){
   const [errors,setErrors]=useState({});
   const [success,setSuccess]=useState('');
   const [errmessage,setErrMessage]=useState('');
-  const hostUrl='https://book-shop-2021.herokuapp.com'
+  const hostUrl=process.env.REACT_APP_HOST_URL
 
    
   let schema={

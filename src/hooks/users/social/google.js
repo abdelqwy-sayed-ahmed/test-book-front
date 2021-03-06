@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 import jwtDecode from 'jwt-decode';
 //google client Id
-const hostUrl='https://book-shop-2021.herokuapp.com'
+const hostUrl=process.env.REACT_APP_HOST_URL
 
 
 const hostUrl=process.env.REACT_APP_HOST_URL

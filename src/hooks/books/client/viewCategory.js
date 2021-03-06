@@ -2,7 +2,7 @@ import React,{useEffect,useState,useContext} from 'react';
 import { useParams,Link } from 'react-router-dom';
 import http from '../../../services/http';
 import userContext from '../../../context/userContext';
-const hostUrl='https://book-shop-2021.herokuapp.com'
+const hostUrl=process.env.REACT_APP_HOST_URL
 const ViewCategory = () => {
   const items=useContext(userContext)
   const searchQuery=items.searchQuery
