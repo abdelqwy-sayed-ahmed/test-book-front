@@ -91,13 +91,13 @@ export default function Login(){
           
             {renderInput('text','email','Email',user.email)}
             {renderInput('password','password','Password',user.password)}
-             <button className="btn btn-primary " disabled={validate()}>Login</button>
+             <button className="btn btn-primary mt-2 " disabled={validate()}>Login</button>
 
-          <div className="d-flex align-items-center mt-2">
-          <div >
-          <Link to ="/forget">Forget your password</Link>
-          </div>
-          <div className="ms-auto">
+          <div className="row ">
+            <div className="col-md-6 text-center mt-2">
+               <Link to ="/forget">Forget password</Link>
+            </div>
+          <div className="col-md-6 text-center mt-2" >
           <Link to ="/register">Create new account</Link>
           </div>
           </div>
@@ -105,7 +105,7 @@ export default function Login(){
           {/* <div className="text-center mt-2">
             <Google/>
           </div> */}
-          <div className="text-center mt-2">
+          <div className="text-center mt-4">
             <Facebook/>
           </div>
         </div>

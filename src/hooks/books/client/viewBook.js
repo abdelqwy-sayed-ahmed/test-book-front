@@ -25,7 +25,7 @@ export default function ViewBook() {
          <div className="row mt-4" key={book._id}>
           <div className="col-md-4 mb-2" >
             <div className="text-center ">
-            <img src={hostUrl+`/${book.image}`} alt={book.title} width="250" height="250"/>
+            <img src={book.image} alt={book.title} width="250" height="250"/>
             </div>
             </div>
            <div className="col-md-8 ">

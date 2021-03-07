@@ -51,6 +51,7 @@ export default function AddBook(){
     let errors=validate()
      setErrors(errors||{})
      if(errors)return;
+     
     //formData
     let formData=new FormData()
     formData.append('title',book.title)

@@ -46,7 +46,7 @@ const AdminBookLists = () => {
             <div className="col-md-4 " key={book._id}>
               <div className="card mt-2 "style={{width:"250px"}} >
                 <div className="card-img-top text-center"  >
-                  <img src={hostUrl+`/${book.image}`} alt={book.title} width="248px" height="200px" />
+                  <img src={book.image} alt={book.title} width="248px" height="200px" />
                 </div>
                 <div className="card-body">
                   <ul className="list-group list-group-flush">

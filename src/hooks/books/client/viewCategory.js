@@ -37,7 +37,7 @@ const ViewCategory = () => {
                   <div className="col-md-4"key={book._id}>
                     <div className="card card-body mt-2 border-white" style={{height:"200"}} >
                     <Link to={`/books/${book.title.replace(/\s+/g, '-').toLowerCase()}/${book._id}`}>
-                    <img src={hostUrl+`/${book.image}`} alt={book.title} height="200" width="200" style={{cursor:'pointer'}} />
+                    <img src={book.image} alt={book.title} height="200" width="200" style={{cursor:'pointer'}} />
                    </Link>
                   </div>
                 </div>

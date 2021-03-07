@@ -26,7 +26,7 @@ const AdminViewBook = () => {
          <div className="row mt-5" key={book._id}>
           <div className="col-md-4 mb-2" >
             <div className="text-center ">
-            <img src={hostUrl+`/${book.image}`} alt={book.title} width="250" height="250"/>
+            <img src={book.image} alt={book.title} width="250" height="250"/>
             <Link to ={`/books/edit-image/${book._id}`}>
               <i className="fa fa-pencil  text-primary" style={{position:'absolute',top:"95px" ,fontSize:"20px"}} role="button" /></Link>
             </div>
