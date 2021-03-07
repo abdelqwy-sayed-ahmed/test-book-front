@@ -34,17 +34,17 @@ const AdminBookLists = () => {
   )
   return (
     <React.Fragment>
-      <div className="row mt-5 mb-2">
+      <div className="row mt-5 mb-2 text-center">
         <div className="col-md-3">
           <GenreList/>
         </div>
+        <div className="col-md-9 text-center">
+          <div className="row text-center ">
           {servMessage&&<div className="alert alert-danger">{servMessage}</div>}
         {booksPerPage.length===0 &&<h3 className="text-center text-danger" >Sorry No much Results found </h3>}
-        <div className="col-md-9 text-center">
-          <div className="row ">
             {booksPerPage.map(book=>(
             <div className="col-md-4 " key={book._id}>
-              <div className="card mt-2 "style={{width:"250px"}} >
+              <div className="card text-center mt-2 "style={{width:"250px"}} >
                 <div className="card-img-top text-center"  >
                   <img src={book.image} alt={book.title} width="248px" height="200px" />
                 </div>

@@ -2,7 +2,7 @@ import React, {  useState,useContext } from 'react';
 import Joi from 'joi-browser'
 import http from '../../services/http';
 import { useLocation,Link } from 'react-router-dom';
-// import Google from './social/google';
+import Google from './social/google';
 import Facebook from './social/facebook';
 import userContext from '../../context/userContext';
 import jwtDecode from 'jwt-decode';
@@ -17,6 +17,7 @@ export default function Login(){
   const [errors,setErrors]=useState({})
   const [errserver,setErrServer]=useState('')
   const location=useLocation()
+  // const hostUrl=process.env.REACT_APP_HOST_URL
 
   let schema={
     email:Joi.string().required().email().label('Email'),
@@ -102,10 +103,10 @@ export default function Login(){
           </div>
           </div>
           </form>
-          {/* <div className="text-center mt-2">
+          <div className="text-center mt-2">
             <Google/>
-          </div> */}
-          <div className="text-center mt-4">
+          </div>
+          <div className="text-center ">
             <Facebook/>
           </div>
         </div>

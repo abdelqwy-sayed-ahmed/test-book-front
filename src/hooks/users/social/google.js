@@ -5,11 +5,12 @@ import { useLocation } from 'react-router-dom';
 
 import jwtDecode from 'jwt-decode';
 //google client Id
-const hostUrl=process.env.REACT_APP_HOST_URL
 
 
-const hostUrl=process.env.REACT_APP_HOST_URL
+const clientId=process.env.REACT_APP_GOOGLE_CLIENT_ID
+
 const Google = () => {
+  const hostUrl=process.env.REACT_APP_HOST_URL
   const location=useLocation()
    //google login
    const onSuccess=async data=>{
