@@ -33,7 +33,7 @@ export default function Profile(){
         )}
         {!list.imageOut&&(
           <div>
-            <img src={hostUrl+`/${list.image}`} className="img-fluid rounded-circle" height="200"width="200" alt={list.name}/>
+            <img src={list.image} className="img-fluid rounded-circle" height="200"width="200" alt={list.name}/>
             <Link to='/profile/edit/image'><i className="fa fa-edit text-info"  style={{cursor:"pointer" ,position:"absolute",}}></i></Link>
           </div>
         )}
